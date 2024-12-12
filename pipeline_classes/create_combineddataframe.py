@@ -49,7 +49,7 @@ class CreateCombinedDataFrame(BaseEstimator, TransformerMixin):
 
                 # Dynamically add emotion labels to the combined row
                 for label in self.label_columns:
-                    print(f"Processing label: {label}")
+                    # print(f"Processing label: {label}")
                     combined_row[label] = row[label]
 
                 combined_data.append(combined_row)
