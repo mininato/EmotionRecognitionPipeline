@@ -2,12 +2,11 @@
 
 config = {
     # Paths for Import Data
-    "accel_path": "/Users/anhducduong/Documents/GitHub/MainPipelineRepo/AccelerometerMeasurements_backup.csv",  # Path to the accelerometer data
-    #"accel_path": "/Users/anhducduong/Documents/GitHub/MainPipelineRepo/single_participant_positive_high.csv",  # Path to the accelerometer data
-    "reports_path": "/Users/anhducduong/Documents/GitHub/MainPipelineRepo/Cleaned_Selfreports.csv",  # Path to the self-reports data
-    "combined_data_path": "/Users/anhducduong/Documents/GitHub/MainPipelineRepo/combined_data_timewindow_2min_labels_valence_arousal.csv",  # Path to the combined data
-    "features_data_path": "/Users/anhducduong/Documents/GitHub/MainPipelineRepo/features_window_60_step_20_all_features.csv",  # Path to the features data
-    "model_path": "/Users/anhducduong/Documents/GitHub/MainPipelineRepo/xgboost_best_model_arousal.pkl",  # Path to the trained model
+    "accel_path": "Path or Name of File: ",  # Path to the accelerometer data
+    "reports_path": "Path or Name of SelfReports File",  # Path to the self-reports data
+    "combined_data_path": "Path or Name of File of Combined Data File",  # Path to the combined data
+    "features_data_path": "Path or Name of File of Features Data File",  # Path to the features data
+    "model_path": "Path or Name of Trained Model File",  # Path to the trained model
 
     # Label Configuration
     "label_columns": ["valence", "arousal"],  # Here you should input the emotion-labels that you are using
