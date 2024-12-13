@@ -173,7 +173,14 @@ class TrainModel(BaseEstimator, TransformerMixin):
             json.dump(model_metadata, f, indent=4)
             print(f"Model metadata saved to {metadata_file}.")
 
+        # Save file paths internally for later retrieval
+        self.model_file = f"{classifier}_best_model_{self.target}.pkl"
+        self.metadata_file = f"{classifier}_model_metadata_{self.target}.json"
+
         return self
+    
+    def get_output_files(self):
+        return self.model_file, self.metadata_file
 
     def transform(self, X):
         return X  # Placeholder for transform step (not needed for training)
